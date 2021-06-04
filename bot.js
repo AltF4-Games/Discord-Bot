@@ -5,7 +5,7 @@ let date = new Date().toISOString().slice(0, 10);
 console.log("discord bot started on " + date);
 
 const discord = require("discord.js");
-const { token } = require("./config.json");
+require('dotenv').config();
 const client = new discord.Client;
 const guildId = '594578956209094666';
 
@@ -68,7 +68,7 @@ const reply = (interaction, response) => {
   })
 }
 
-client.login(token);
+client.login(process.env.BOT_TOKEN);
 
 client.on('guildMemberAdd', member => {
   const channel = member.guild.channels.get('594587939938238474');
