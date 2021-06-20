@@ -49,8 +49,8 @@ client.ws.on('INTERACTION_CREATE', async (interaction) => {
     reply(interaction, 'pong');
   }
   if (command == 'join-beta') {
-    //reply(interaction, 'Sorry, The beta program has ended.');
-    reply(interaction, "Thanks for joining the beta program.\nhttps://drive.google.com/file/d/1n7EC_7L-FCXT6MhrrsxuwWb3QOgUCVyA/view?usp=sharing");
+    reply(interaction, 'Sorry, There is no active beta program.');
+    //reply(interaction, "Thanks for joining the beta program.\nhttps://drive.google.com/file/d/1n7EC_7L-FCXT6MhrrsxuwWb3QOgUCVyA/view?usp=sharing");
   }
   if (command == 'old-games') {
     reply(interaction, '<https://freezestudios.itch.io/lets-play-simulator> \n<https://freezestudios.itch.io/something-in-the-shadows> \n<https://freezestudios.itch.io/endless> \n<https://freezestudios.itch.io/the-apartment> \n<https://freezestudios.itch.io/the-apartment-3> \n<https://freezestudios.itch.io/stairwell-2-hell> \n<https://freezestudios.itch.io/hq-dark-web>');
