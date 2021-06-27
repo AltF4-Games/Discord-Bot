@@ -71,11 +71,11 @@ const reply = (interaction, response) => {
 client.login(process.env.BOT_TOKEN);
 
 client.on('guildMemberAdd', member => {
-  const channel = member.guild.channels.get('594587939938238474');
-  channel.send(`Hey ${member}, welcome to SERVER.exe :tada: <:surprised_pikachu:644282592656621578> !`);
-  console.log(`${member} joined`);
+  //const channel = member.guild.channels.get('594587939938238474');
+  //channel.send(`Hey ${member}, welcome to SERVER.exe :tada: <:surprised_pikachu:644282592656621578> !`);
+  console.log(`${member.displayName} joined`);
 });
 
 client.on("guildMemberRemove", (member) => {
-  console.log(`${member} left`);
+  console.log(`${member.displayName} left`);
 });
