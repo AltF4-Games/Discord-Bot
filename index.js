@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-//@ts-check
 let date = new Date().toISOString().slice(0, 10);
 console.log("discord bot started on " + date);
 
